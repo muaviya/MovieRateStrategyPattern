@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FIlmStrategy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="HKL-kK-eUK">
+                                <rect key="frame" x="87.5" y="109" width="239" height="32"/>
+                                <segments>
+                                    <segment title="IMDB"/>
+                                    <segment title="KinoPoisk"/>
+                                    <segment title="ivi"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentChanges:" destination="BYZ-38-t0r" eventType="valueChanged" id="UCp-2I-8gq"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="film title  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="615-Uv-cO7">
+                                <rect key="frame" x="87.5" y="189" width="70" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="film rate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edE-mI-Ftb">
+                                <rect key="frame" x="87.5" y="228" width="62" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="film rveview" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0IS-Mm-NWj">
+                                <rect key="frame" x="87.5" y="270" width="91" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1+1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jdb-Ah-DbX">
+                                <rect key="frame" x="300.5" y="189" width="26" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lhS-Dw-MJg">
+                                <rect key="frame" x="315.5" y="228" width="11" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="film rveview" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a53-8F-1ni">
+                                <rect key="frame" x="236" y="270.5" width="90.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="a53-8F-1ni" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="0IS-Mm-NWj" secondAttribute="trailing" constant="16" id="5v7-OZ-L1N"/>
+                            <constraint firstItem="615-Uv-cO7" firstAttribute="leading" secondItem="HKL-kK-eUK" secondAttribute="leading" id="84n-GR-pva"/>
+                            <constraint firstItem="HKL-kK-eUK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="65" id="8Uw-ok-zQI"/>
+                            <constraint firstItem="a53-8F-1ni" firstAttribute="centerY" secondItem="0IS-Mm-NWj" secondAttribute="centerY" id="C6S-gT-OLO"/>
+                            <constraint firstItem="lhS-Dw-MJg" firstAttribute="trailing" secondItem="HKL-kK-eUK" secondAttribute="trailing" id="Cmh-eF-eGu"/>
+                            <constraint firstItem="Jdb-Ah-DbX" firstAttribute="centerY" secondItem="615-Uv-cO7" secondAttribute="centerY" id="EhK-gr-cq0"/>
+                            <constraint firstItem="615-Uv-cO7" firstAttribute="top" secondItem="HKL-kK-eUK" secondAttribute="bottom" constant="49" id="QWR-qG-pV0"/>
+                            <constraint firstItem="0IS-Mm-NWj" firstAttribute="leading" secondItem="edE-mI-Ftb" secondAttribute="leading" id="Tqj-QL-CDs"/>
+                            <constraint firstItem="HKL-kK-eUK" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Vxm-mi-6Ts"/>
+                            <constraint firstItem="edE-mI-Ftb" firstAttribute="top" secondItem="615-Uv-cO7" secondAttribute="bottom" constant="18" id="gB5-P0-B6O"/>
+                            <constraint firstItem="Jdb-Ah-DbX" firstAttribute="trailing" secondItem="HKL-kK-eUK" secondAttribute="trailing" id="gWT-nh-Rtw"/>
+                            <constraint firstItem="lhS-Dw-MJg" firstAttribute="centerY" secondItem="edE-mI-Ftb" secondAttribute="centerY" id="kID-n8-XjS"/>
+                            <constraint firstItem="edE-mI-Ftb" firstAttribute="leading" secondItem="615-Uv-cO7" secondAttribute="leading" id="li7-ye-OvF"/>
+                            <constraint firstItem="0IS-Mm-NWj" firstAttribute="top" secondItem="edE-mI-Ftb" secondAttribute="bottom" constant="21" id="m1A-6r-hNh"/>
+                            <constraint firstItem="a53-8F-1ni" firstAttribute="trailing" secondItem="HKL-kK-eUK" secondAttribute="trailing" id="wyY-EZ-LeI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="rateLbl" destination="lhS-Dw-MJg" id="O0g-rt-osd"/>
+                        <outlet property="reviewLbl" destination="a53-8F-1ni" id="gxm-Kw-Stz"/>
+                        <outlet property="segment" destination="HKL-kK-eUK" id="yKB-6a-lod"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-14" y="74"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
